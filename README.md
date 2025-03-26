@@ -1,2 +1,2 @@
 # escola-api
- API usando NodeJS e Esxpress
+ API usando Node.JS e Esxpress
