@@ -47,9 +47,16 @@ app.post('/alunos', (req, res) => {
 });
 
 //Atualizando aluno
-app.patch('/alunos/:id', (req, res) =>{
+app.patch('/alunos/:id', (req, res) => {
    // res.send(`Atualizando dados do aluno`);
-   
+
+   //capturar id
+   const id = parseInt(req.params.id);
+
+   //pegando as informações do body
+   const aluno = req.body;
+
+    atualizar(id, aluno, res);
 });
 
 //Excluindo aluno

@@ -88,9 +88,12 @@ function atualizar(id, aluno, res) {
       if (erro) {
          res.status(400).json(erro.code);
       } else {
-         res.status(200).json({ "status": "Aluno atualizado com sucesso!" });
+
+         // ... reticências é chamado de spread operador (operador de espalhamento de objeto).
+         res.status(200).json({ ...aluno, id});
       }
    });
+
 }
 
 
