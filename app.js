@@ -18,7 +18,10 @@ app.use(express.urlencoded({extended:true}));
 
 //Raiz da API
 app.get('/', (req, res) => {
-  res.send(`API ultilizando Node.js, Espress e Mysql`);
+  // res.send(`API ultilizando Node.js, Espress e Mysql`);
+  res.redirect('https://documenter.getpostman.com/view/43562390/2sB2cSi4Cw');
+
+
 });
 
 //Exibindos TODOS os alunos
